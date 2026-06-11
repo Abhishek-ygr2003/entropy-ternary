@@ -1,0 +1,44 @@
+{
+  "10%": {
+    "fraction": 0.1,
+    "accuracy": 94.2,
+    "drop": 4.0,
+    "op_reduction": 5.4805573047858935,
+    "avg_entropy": 1.2822763853244175
+  },
+  "20%": {
+    "fraction": 0.2,
+    "accuracy": 66.8,
+    "drop": 31.400000000000006,
+    "op_reduction": 12.842411838790934,
+    "avg_entropy": 1.1703705023992663
+  },
+  "30%": {
+    "fraction": 0.3,
+    "accuracy": 50.0,
+    "drop": 48.2,
+    "op_reduction": 20.227880982367765,
+    "avg_entropy": 1.1374143642251382
+  },
+  "40%": {
+    "fraction": 0.4,
+    "accuracy": 55.6,
+    "drop": 42.6,
+    "op_reduction": 27.988232052896723,
+    "avg_entropy": 1.0988760660065022
+  },
+  "50%": {
+    "fraction": 0.5,
+    "accuracy": 59.2,
+    "drop": 39.0,
+    "op_reduction": 35.897158375314866,
+    "avg_entropy": 1.0660804161305266
+  },
+  "60%": {
+    "fraction": 0.6,
+    "accuracy": 71.8,
+    "drop": 26.400000000000006,
+    "op_reduction": 43.402668450881606,
+    "avg_entropy": 1.0362533002634549
+  }
+}

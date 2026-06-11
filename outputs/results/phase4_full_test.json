@@ -1,0 +1,27 @@
+{
+  "FP32": {
+    "accuracy": 97.75,
+    "drop": 0.0,
+    "op_reduction": 0.0
+  },
+  "INT8": {
+    "accuracy": 97.73,
+    "drop": 0.01999999999999602,
+    "op_reduction": 0.0
+  },
+  "random 50%": {
+    "accuracy": 89.86,
+    "drop": 7.890000000000001,
+    "op_reduction": 38.48984571788413
+  },
+  "entropy_guided 50%": {
+    "accuracy": 91.8,
+    "drop": 5.950000000000003,
+    "op_reduction": 42.35181832493703
+  },
+  "l2_norm 50%": {
+    "accuracy": 60.44,
+    "drop": 37.31,
+    "op_reduction": 35.897158375314866
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "30%": {
+    "random": {
+      "accuracy": 93.6,
+      "drop": 4.6000000000000085,
+      "op_reduction": 23.513263539042818
+    },
+    "entropy_guided": {
+      "accuracy": 93.4,
+      "drop": 4.799999999999997,
+      "op_reduction": 26.108902707808568
+    },
+    "l2_norm": {
+      "accuracy": 50.0,
+      "drop": 48.2,
+      "op_reduction": 20.227880982367765
+    }
+  },
+  "50%": {
+    "random": {
+      "accuracy": 90.8,
+      "drop": 7.400000000000006,
+      "op_reduction": 38.48984571788413
+    },
+    "entropy_guided": {
+      "accuracy": 91.2,
+      "drop": 7.0,
+      "op_reduction": 42.35181832493703
+    },
+    "l2_norm": {
+      "accuracy": 59.2,
+      "drop": 39.0,
+      "op_reduction": 35.897158375314866
+    }
+  }
+}

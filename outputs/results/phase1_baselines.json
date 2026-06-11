@@ -1,0 +1,12 @@
+{
+  "FP32": {
+    "accuracy": 98.2,
+    "drop": 0.0,
+    "op_reduction": 0.0
+  },
+  "INT8": {
+    "accuracy": 98.2,
+    "drop": 0.0,
+    "op_reduction": 0.0
+  }
+}
