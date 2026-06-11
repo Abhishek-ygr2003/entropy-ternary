@@ -172,7 +172,7 @@ Random 50% (20 seeds): mean = 88.81%, sigma = 4.13%, range [80.60%, 94.56%]
 ```bibtex
 @article{yadav2025entropy,
   title   = {Entropy-Guided Partial Ternarization for Hybrid-Precision Neural Inference},
-  author  = {Yadav, Abhishek and Antony, Melwin and Devi, C. Indira},
+  author  = {Abhishek Yadav},
   year    = {2025},
   journal = {Student Research}
 }
@@ -181,5 +181,4 @@ Random 50% (20 seeds): mean = 88.81%, sigma = 4.13%, range [80.60%, 94.56%]
 ---
 
 ## Acknowledgements
-
-Garden City University, Bengaluru · PyTorch open-source community
+Bengaluru · PyTorch open-source community
