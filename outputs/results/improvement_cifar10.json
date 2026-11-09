@@ -1,0 +1,23 @@
+{
+  "description": "CIFAR-10 Small CNN (3 conv + FC) with entropy-guided FC ternarization",
+  "architecture": "Conv(3->32)->Pool->Conv(32->64)->Pool->Conv(64->128)->FC(8192->256->10)",
+  "fp32_accuracy": 82.12,
+  "ternarization_results": {
+    "25_pct": {
+      "accuracy": 77.63,
+      "drop_vs_fp32": 4.49
+    },
+    "50_pct": {
+      "accuracy": 78.16,
+      "drop_vs_fp32": 3.96
+    },
+    "75_pct": {
+      "accuracy": 78.88,
+      "drop_vs_fp32": 3.24
+    },
+    "random_50_pct": {
+      "accuracy": 80.83,
+      "drop_vs_fp32": 1.29
+    }
+  }
+}

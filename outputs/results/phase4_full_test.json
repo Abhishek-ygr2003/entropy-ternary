@@ -1,27 +1,27 @@
 {
   "FP32": {
-    "accuracy": 97.75,
+    "accuracy": 97.81,
     "drop": 0.0,
     "op_reduction": 0.0
   },
   "INT8": {
-    "accuracy": 97.73,
+    "accuracy": 97.79,
     "drop": 0.01999999999999602,
     "op_reduction": 0.0
   },
   "random 50%": {
-    "accuracy": 89.86,
-    "drop": 7.890000000000001,
-    "op_reduction": 38.48984571788413
+    "accuracy": 90.23,
+    "drop": 7.579999999999998,
+    "op_reduction": 38.442616498740556
   },
   "entropy_guided 50%": {
-    "accuracy": 91.8,
-    "drop": 5.950000000000003,
-    "op_reduction": 42.35181832493703
+    "accuracy": 92.99,
+    "drop": 4.820000000000007,
+    "op_reduction": 42.331155541561714
   },
   "l2_norm 50%": {
-    "accuracy": 60.44,
-    "drop": 37.31,
-    "op_reduction": 35.897158375314866
+    "accuracy": 61.92,
+    "drop": 35.89,
+    "op_reduction": 35.87747953400504
   }
 }

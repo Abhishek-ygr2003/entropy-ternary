@@ -1,20 +1,20 @@
 {
   "42": {
-    "fp32": 97.75,
-    "random": 89.86,
-    "entropy_guided": 91.8,
-    "l2_norm": 60.44
+    "fp32": 97.81,
+    "random": 90.23,
+    "entropy_guided": 92.99,
+    "l2_norm": 61.92
   },
   "7": {
-    "fp32": 97.76,
-    "random": 87.97,
-    "entropy_guided": 92.16,
-    "l2_norm": 56.74
+    "fp32": 97.82,
+    "random": 86.69,
+    "entropy_guided": 92.62,
+    "l2_norm": 54.57
   },
   "123": {
-    "fp32": 97.86,
-    "random": 92.48,
-    "entropy_guided": 92.41,
-    "l2_norm": 61.64
+    "fp32": 97.79,
+    "random": 92.28,
+    "entropy_guided": 92.89,
+    "l2_norm": 61.9
   }
 }

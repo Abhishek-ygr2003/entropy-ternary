@@ -1,0 +1,32 @@
+{
+  "description": "Tau sensitivity sweep at 50% FC1 ternarization (full test set)",
+  "fp32_accuracy": 97.81,
+  "fraction": 0.5,
+  "tau_sweep": {
+    "0.1": {
+      "accuracy": 86.04,
+      "drop_vs_fp32": 11.77,
+      "op_reduction_pct": 21.28
+    },
+    "0.2": {
+      "accuracy": 92.42,
+      "drop_vs_fp32": 5.39,
+      "op_reduction_pct": 36.51
+    },
+    "0.3": {
+      "accuracy": 92.99,
+      "drop_vs_fp32": 4.82,
+      "op_reduction_pct": 42.33
+    },
+    "0.4": {
+      "accuracy": 91.8,
+      "drop_vs_fp32": 6.01,
+      "op_reduction_pct": 45.71
+    },
+    "0.5": {
+      "accuracy": 89.9,
+      "drop_vs_fp32": 7.91,
+      "op_reduction_pct": 47.45
+    }
+  }
+}

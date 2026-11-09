@@ -1,0 +1,30 @@
+{
+  "description": "INT8 vs Ternary comparison on MNIST MLP (full test set)",
+  "fp32_accuracy": 97.81,
+  "comparisons": {
+    "INT8": {
+      "accuracy": 97.79,
+      "drop_vs_fp32": 0.02,
+      "memory_reduction_pct": 75.0,
+      "op_reduction_pct": 0.0
+    },
+    "Ternary_25pct": {
+      "accuracy": 93.67,
+      "drop_vs_fp32": 4.14,
+      "op_reduction_pct": 22.16,
+      "memory_savings_estimate_pct": 18.8
+    },
+    "Ternary_50pct": {
+      "accuracy": 92.99,
+      "drop_vs_fp32": 4.82,
+      "op_reduction_pct": 42.33,
+      "memory_savings_estimate_pct": 37.5
+    },
+    "Ternary_75pct": {
+      "accuracy": 93.09,
+      "drop_vs_fp32": 4.72,
+      "op_reduction_pct": 61.29,
+      "memory_savings_estimate_pct": 56.2
+    }
+  }
+}

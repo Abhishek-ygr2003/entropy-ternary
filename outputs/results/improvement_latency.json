@@ -1,0 +1,15 @@
+{
+  "description": "Wall-clock inference latency (CUDA, batch_size=256)",
+  "batch_size": 256,
+  "num_iterations": 1000,
+  "fp32": {
+    "avg_ms_per_batch": 0.172,
+    "avg_us_per_sample": 0.67
+  },
+  "ternary_50pct_entropy_guided": {
+    "avg_ms_per_batch": 0.1706,
+    "avg_us_per_sample": 0.67
+  },
+  "speedup_factor": 1.008,
+  "note": "Note: PyTorch does not exploit zero-skipping natively in matmul kernels. The measured speedup reflects only reduced memory bandwidth effects. A custom ternary-aware kernel would yield larger gains."
+}

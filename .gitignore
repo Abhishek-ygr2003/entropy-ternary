@@ -14,8 +14,9 @@ build/
 venv/
 env/
 
-# Data (MNIST downloads)
+# Data (MNIST/CIFAR downloads)
 data/
+data_cifar/
 
 # Outputs - keep results and figures, ignore checkpoints (large)
 outputs/checkpoints/*.pt
