@@ -1,0 +1,171 @@
+{
+  "curves": {
+    "entropy_guided": [
+      {
+        "f": 0.1,
+        "op_reduction": 8.64,
+        "accuracy": 96.91
+      },
+      {
+        "f": 0.2,
+        "op_reduction": 17.52,
+        "accuracy": 96.76
+      },
+      {
+        "f": 0.3,
+        "op_reduction": 26.09,
+        "accuracy": 96.16
+      },
+      {
+        "f": 0.4,
+        "op_reduction": 34.31,
+        "accuracy": 96.13
+      },
+      {
+        "f": 0.5,
+        "op_reduction": 42.33,
+        "accuracy": 95.68
+      },
+      {
+        "f": 0.6,
+        "op_reduction": 49.6,
+        "accuracy": 95.67
+      },
+      {
+        "f": 0.7,
+        "op_reduction": 57.26,
+        "accuracy": 95.96
+      },
+      {
+        "f": 0.8,
+        "op_reduction": 64.7,
+        "accuracy": 95.67
+      },
+      {
+        "f": 0.9,
+        "op_reduction": 71.86,
+        "accuracy": 95.88
+      }
+    ],
+    "random": [
+      {
+        "f": 0.1,
+        "op_reduction": 7.42,
+        "accuracy": 97.49
+      },
+      {
+        "f": 0.2,
+        "op_reduction": 15.31,
+        "accuracy": 97.37
+      },
+      {
+        "f": 0.3,
+        "op_reduction": 23.52,
+        "accuracy": 97.35
+      },
+      {
+        "f": 0.4,
+        "op_reduction": 31.74,
+        "accuracy": 97.36
+      },
+      {
+        "f": 0.5,
+        "op_reduction": 38.44,
+        "accuracy": 96.74
+      },
+      {
+        "f": 0.6,
+        "op_reduction": 46.05,
+        "accuracy": 97.01
+      },
+      {
+        "f": 0.7,
+        "op_reduction": 54.17,
+        "accuracy": 96.62
+      },
+      {
+        "f": 0.8,
+        "op_reduction": 62.13,
+        "accuracy": 96.33
+      },
+      {
+        "f": 0.9,
+        "op_reduction": 69.31,
+        "accuracy": 95.78
+      }
+    ],
+    "l2_norm": [
+      {
+        "f": 0.1,
+        "op_reduction": 5.47,
+        "accuracy": 97.79
+      },
+      {
+        "f": 0.2,
+        "op_reduction": 12.8,
+        "accuracy": 97.63
+      },
+      {
+        "f": 0.3,
+        "op_reduction": 20.18,
+        "accuracy": 97.36
+      },
+      {
+        "f": 0.4,
+        "op_reduction": 27.94,
+        "accuracy": 97.24
+      },
+      {
+        "f": 0.5,
+        "op_reduction": 35.88,
+        "accuracy": 96.81
+      },
+      {
+        "f": 0.6,
+        "op_reduction": 43.33,
+        "accuracy": 96.45
+      },
+      {
+        "f": 0.7,
+        "op_reduction": 51.66,
+        "accuracy": 96.59
+      },
+      {
+        "f": 0.8,
+        "op_reduction": 60.0,
+        "accuracy": 95.99
+      },
+      {
+        "f": 0.9,
+        "op_reduction": 68.72,
+        "accuracy": 95.92
+      }
+    ]
+  },
+  "matched_op_readout": {
+    "entropy_guided": {
+      "nearest_point": {
+        "f": 0.5,
+        "op_reduction": 42.33,
+        "accuracy": 95.68
+      },
+      "interpolated_acc_at_42.33op": 95.68
+    },
+    "random": {
+      "nearest_point": {
+        "f": 0.6,
+        "op_reduction": 46.05,
+        "accuracy": 97.01
+      },
+      "interpolated_acc_at_42.33op": 96.88
+    },
+    "l2_norm": {
+      "nearest_point": {
+        "f": 0.6,
+        "op_reduction": 43.33,
+        "accuracy": 96.45
+      },
+      "interpolated_acc_at_42.33op": 96.5
+    }
+  }
+}

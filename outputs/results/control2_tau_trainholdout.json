@@ -1,0 +1,32 @@
+{
+  "split": "10k validation held out from the 60k TRAINING set (disjoint from the 10k test set)",
+  "fp32": {
+    "val": 97.53,
+    "test": 97.63
+  },
+  "sweep": {
+    "0.1": {
+      "val_accuracy": 96.2,
+      "test_accuracy": 96.49
+    },
+    "0.2": {
+      "val_accuracy": 96.54,
+      "test_accuracy": 96.68
+    },
+    "0.3": {
+      "val_accuracy": 96.14,
+      "test_accuracy": 96.25
+    },
+    "0.4": {
+      "val_accuracy": 93.04,
+      "test_accuracy": 93.59
+    },
+    "0.5": {
+      "val_accuracy": 85.15,
+      "test_accuracy": 85.29
+    }
+  },
+  "tau_star_val": 0.2,
+  "test_at_tau_star": 96.68,
+  "test_at_tau_03": 96.25
+}
