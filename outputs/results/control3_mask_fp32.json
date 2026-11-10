@@ -1,0 +1,12 @@
+{
+  "fp32": 97.81,
+  "ternary_original": 92.99,
+  "ternary_twn": 95.68,
+  "mask_fp32": 95.62,
+  "prune_matched": 97.8,
+  "gaps": {
+    "survivor_ternarization_damage": -0.06,
+    "mask_choice_damage": 2.18,
+    "maxnorm_scaling_damage": 2.69
+  }
+}

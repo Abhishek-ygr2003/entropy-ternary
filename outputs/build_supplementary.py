@@ -12,7 +12,7 @@ OUT = r"C:\Users\2026\Downloads\tmlr_submit\supplementary_anon.zip"
 
 INCLUDE_FILES = [
     "README.md", "requirements.txt",
-    "pipeline.py", "experiments_control.py", "experiments_control2.py",
+    "pipeline.py", "experiments_control.py", "experiments_control2.py", "experiments_control3.py",
     "experiments_improvement.py", "plot_results.py", "retrain_checkpoint.py",
     "run_remaining_experiments.py",
     "src/__init__.py", "src/model.py", "src/train.py", "src/ternarize.py",
@@ -22,7 +22,7 @@ INCLUDE_DIRS = [
     ("outputs/results", ".json"),
     ("outputs/checkpoints", ".pt"),
 ]
-LOGS = ["outputs/control_run.log", "outputs/control2_run.log"]
+LOGS = ["outputs/control_run.log", "outputs/control2_run.log", "outputs/control3_run.log"]
 
 IDENTITY = re.compile(r"Abhishek|Yadav|ygr2003|Garden City|abhishek10", re.I)
 
