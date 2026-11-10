@@ -1,0 +1,37 @@
+{
+  "matched_pruning": {
+    "entropy@0.25": {
+      "target_op_reduction_pct": 22.16,
+      "achieved_op_reduction_pct": 22.16,
+      "pruning_accuracy": 97.79,
+      "pruning_drop_vs_fp32": 0.02,
+      "matching_ternary_accuracy": 93.67,
+      "ternary_drop_vs_fp32": 4.14
+    },
+    "entropy@0.5": {
+      "target_op_reduction_pct": 42.33,
+      "achieved_op_reduction_pct": 42.33,
+      "pruning_accuracy": 97.8,
+      "pruning_drop_vs_fp32": 0.01,
+      "matching_ternary_accuracy": 92.99,
+      "ternary_drop_vs_fp32": 4.82
+    },
+    "entropy@0.75": {
+      "target_op_reduction_pct": 61.29,
+      "achieved_op_reduction_pct": 61.29,
+      "pruning_accuracy": 97.45,
+      "pruning_drop_vs_fp32": 0.36,
+      "matching_ternary_accuracy": 93.09,
+      "ternary_drop_vs_fp32": 4.72
+    },
+    "random@0.5": {
+      "target_op_reduction_pct": 38.44,
+      "achieved_op_reduction_pct": 38.44,
+      "pruning_accuracy": 97.76,
+      "pruning_drop_vs_fp32": 0.05,
+      "matching_ternary_accuracy": 90.23,
+      "ternary_drop_vs_fp32": 7.58
+    }
+  },
+  "fp32_accuracy_full_set": 97.81
+}

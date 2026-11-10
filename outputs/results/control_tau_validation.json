@@ -1,0 +1,32 @@
+{
+  "split": {
+    "validation": "last 2000 of MNIST test set",
+    "test": "first 8000 of MNIST test set"
+  },
+  "sweep": {
+    "0.1": {
+      "val_accuracy": 89.5,
+      "test8000_accuracy": 85.17
+    },
+    "0.2": {
+      "val_accuracy": 93.8,
+      "test8000_accuracy": 92.08
+    },
+    "0.3": {
+      "val_accuracy": 95.2,
+      "test8000_accuracy": 92.44
+    },
+    "0.4": {
+      "val_accuracy": 93.1,
+      "test8000_accuracy": 91.47
+    },
+    "0.5": {
+      "val_accuracy": 91.7,
+      "test8000_accuracy": 89.45
+    }
+  },
+  "tau_selected_on_validation": 0.3,
+  "test_accuracy_at_selected_tau": 92.44,
+  "test_accuracy_at_tau03": 92.44,
+  "note": "Full-test-set numbers from other tables used all 10,000 samples with tau=0.3; these use a disjoint 8,000-sample test split and are not directly comparable."
+}

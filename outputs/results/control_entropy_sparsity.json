@@ -1,0 +1,30 @@
+{
+  "correlations": {
+    "entropy_vs_nonzeros": 0.9992389214429591,
+    "entropy_vs_sparsity": -0.9993590917414393,
+    "entropy_vs_wmax": -0.8896951107855704,
+    "entropy_vs_l2norm": -0.6737090276506135,
+    "entropy_vs_meanabs": -0.5503456326680095,
+    "nonzeros_vs_wmax": -0.8853460904596228,
+    "nnz_stats": {
+      "mean_per_row": 169.625,
+      "min": 33,
+      "max": 495
+    },
+    "overlap_entropy_vs_sparsest_50pct": 0.9844
+  },
+  "sparsest_rows_strategy": {
+    "0.25": {
+      "accuracy": 93.67,
+      "op_reduction_pct": 22.16
+    },
+    "0.5": {
+      "accuracy": 92.27,
+      "op_reduction_pct": 42.33
+    },
+    "0.75": {
+      "accuracy": 92.96,
+      "op_reduction_pct": 61.29
+    }
+  }
+}

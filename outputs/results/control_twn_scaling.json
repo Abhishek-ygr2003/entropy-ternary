@@ -1,0 +1,23 @@
+{
+  "scaling": "delta_j = mean(|w| over survivors); weff = sign * delta_j",
+  "fraction_results": {
+    "0.25": {
+      "entropy_guided": 96.31,
+      "random": 97.07,
+      "l2_norm": 97.48,
+      "entropy_op_reduction_pct": 22.16
+    },
+    "0.5": {
+      "entropy_guided": 95.68,
+      "random": 96.74,
+      "l2_norm": 96.81,
+      "entropy_op_reduction_pct": 42.33
+    },
+    "0.75": {
+      "entropy_guided": 95.88,
+      "random": 96.69,
+      "l2_norm": 96.43,
+      "entropy_op_reduction_pct": 61.29
+    }
+  }
+}
