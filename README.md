@@ -1,9 +1,9 @@
-# Entropy-Guided Partial Ternarization for Hybrid-Precision Neural Inference
+# Entropy-Guided Neuron Selection in Partial Ternarization: A Hypothesis–Controls Evaluation
 
 Reproducibility codebase for the paper:
 
-> **Entropy-Guided Partial Ternarization for Hybrid-Precision Neural Inference**  
-> Abhishek Yadav, Melwin Antony, C. Indira Devi  
+> **Entropy-Guided Neuron Selection in Partial Ternarization: A Hypothesis–Controls Evaluation**  
+> Abhishek Yadav GR  
 > Garden City University, Bengaluru
 
 ---
@@ -22,7 +22,10 @@ This project implements and evaluates three neuron-selection strategies for post
 | **L2-norm** | Yes (sigma = 0) | Selects neurons by ascending weight norm |
 | **Random** | No (sigma ~ 4%) | Uniform random subset |
 
-**Key finding:** Entropy-guided selection achieves 42.35% operation-count reduction at 50% ternarization with 91.80% accuracy (vs FP32 97.75%), with **zero seed variance** — making it reproducible by construction.
+**First-pass finding:** Entropy-guided selection achieved 42.33% operation-count reduction at 50% ternarization with 92.99% accuracy (vs FP32 97.81%), with zero selection-seed variance.
+
+> [!IMPORTANT]
+> **The first-pass advantage does not survive attribution controls** (see [`experiments_control.py`](experiments_control.py) and `outputs/results/control_*.json`): ternary entropy correlates +0.999 with row sparsity (it is functionally a sparsity detector); under magnitude-restoring TWN scaling the strategy ordering reverses (L2-norm 96.81% / random 96.74% > entropy 95.68%); and matched magnitude pruning dominates the accuracy–op tradeoff (97.80% at the same op count). The control experiment script is included in this repo, together with the full run log.
 
 ---
 
@@ -79,6 +82,8 @@ weff = 0          when wt = 0
 - `src/train.py`: Contains standard PyTorch training and evaluation loops for MNIST.
 - `src/ternarize.py`: The core logic. Contains functions for ternarizing weight rows, calculating operation-count proxies, simulating INT8, and implementing the three selection strategies (`select_random`, `select_l2_norm`, `select_entropy_guided`).
 - `pipeline.py`: The main execution script. Orchestrates the training and the 6 experimental phases, saving outputs to JSON files.
+- `experiments_control.py`: The attribution-control experiments (C1–C4): entropy–sparsity correlation, TWN-style magnitude-restoring scaling rerun, matched magnitude pruning, and τ selection on a held-out validation split. Results land in `outputs/results/control_*.json`; a full console log is kept at `outputs/control_run.log`.
+- `experiments_improvement.py`: τ sensitivity sweep, measured GPU latency, the CIFAR-10 CNN transfer probe, and the INT8 comparison.
 - `plot_results.py`: Reads the generated JSON files and plots them using matplotlib.
 - `tests/test_ternarize.py`: Comprehensive test suite verifying logic, matrix shapes, operations, and strict determinism of the entropy-guided strategy.
 
@@ -170,11 +175,11 @@ Random 50% (20 seeds): mean = 88.81%, sigma = 4.13%, range [80.60%, 94.56%]
 ## Citation
 
 ```bibtex
-@article{yadav2025entropy,
-  title   = {Entropy-Guided Partial Ternarization for Hybrid-Precision Neural Inference},
-  author  = {Abhishek Yadav},
-  year    = {2025},
-  journal = {Student Research}
+@article{yadav2026entropy,
+  title   = {Entropy-Guided Neuron Selection in Partial Ternarization: A Hypothesis--Controls Evaluation},
+  author  = {Abhishek Yadav GR},
+  year    = {2026},
+  journal = {Preprint (code and results at github.com/Abhishek-ygr2003/entropy-ternary)}
 }
 ```
 
